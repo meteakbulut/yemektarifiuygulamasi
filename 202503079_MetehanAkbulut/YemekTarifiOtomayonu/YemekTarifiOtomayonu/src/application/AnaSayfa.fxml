@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AnaSayfaController">
+   <children>
+      <AnchorPane fx:id="ancMenu" prefHeight="500.0" prefWidth="207.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="593.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="500.0" prefWidth="207.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <ImageView cache="true" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@pngwing.com.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="218.0" text="Button" visible="false" />
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="218.0" text="Button" visible="false" />
+                  <Button fx:id="btnKesfet" mnemonicParsing="false" onAction="#btnKesfetOnClick" prefHeight="40.0" prefWidth="208.0" text="Keşfet" />
+                  <Button fx:id="btnArama" mnemonicParsing="false" onAction="#btnAramaOnClick" prefHeight="40.0" prefWidth="208.0" text="Arama" />
+                  <Button fx:id="btnYemekTariflerim" mnemonicParsing="false" onAction="#btnYemekTariflerimOnClick" prefHeight="40.0" prefWidth="208.0" text="Yemek Tariflerim" />
+                  <Button fx:id="btnSifreDegistir" mnemonicParsing="false" onAction="#btnSifreDegistirOnClick" prefHeight="40.0" prefWidth="208.0" text="Şifre Değiştir" />
+                  <Button fx:id="btnCikisYap" mnemonicParsing="false" onAction="#btnCikisYapOnClick" prefHeight="40.0" prefWidth="208.0" text="Çıkış Yap" />
+                  <Button fx:id="btnAdmin" mnemonicParsing="false" onAction="#btnAdminOnclick" prefHeight="40.0" prefWidth="208.0" text="Admin" visible="false" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="207.0" prefHeight="700.0" prefWidth="900.0">
+         <children>
+            <AnchorPane fx:id="ancIcerik" prefHeight="500.0" prefWidth="593.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

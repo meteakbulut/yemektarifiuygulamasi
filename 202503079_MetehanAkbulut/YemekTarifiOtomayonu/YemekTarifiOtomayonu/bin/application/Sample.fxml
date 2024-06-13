@@ -1,0 +1,108 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="600.0" style="-fx-background-color: white;">
+<children>
+<SplitPane dividerPositions="0.6502775574940522" layoutX="123.0" layoutY="30.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<items>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: white;">
+<children>
+<SplitPane dividerPositions="0.5336322869955157" layoutX="81.0" layoutY="18.0" prefHeight="195.33333333333334" prefWidth="597.3333333333334" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<items>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="249.0" prefWidth="333.0">
+<children>
+<TableView fx:id="tbl1" layoutX="30.0" layoutY="37.0" prefHeight="231.0" prefWidth="314.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="37.0">
+<columns>
+<TableColumn fx:id="tbl1_btip" prefWidth="61.59997707605362" text="Besin Tipi"/>
+<TableColumn fx:id="tbl1_danisan" prefWidth="78.39995574951172" text="Danışan"/>
+<TableColumn fx:id="tbl1_adet" prefWidth="39.199951171875" text="Adet"/>
+<TableColumn fx:id="tbl1_tarih" prefWidth="48.0" text="Tarih"/>
+<TableColumn fx:id="tbl1_toplam" prefWidth="90.40005493164062" text="Toplam Kalori"/>
+</columns>
+</TableView>
+<Label layoutX="14.0" layoutY="3.0" text="Yemek Listesi">
+<font>
+<Font size="20.0"/>
+</font>
+</Label>
+<TextField fx:id="txt_danisan" layoutX="144.0" layoutY="5.0" prefHeight="25.0" prefWidth="157.0" promptText="Danışan Adını giriniz...."/>
+</children>
+</AnchorPane>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: white;">
+<children>
+<Label layoutX="22.0" layoutY="5.0" text="Besinler">
+<font>
+<Font size="20.0"/>
+</font>
+</Label>
+<TextField fx:id="txt_besinler" layoutX="99.0" layoutY="7.0" prefHeight="25.0" prefWidth="157.0" promptText="Ürün adı giriniz"/>
+<TableView fx:id="tbl2" layoutX="14.0" layoutY="40.0" prefHeight="125.0" prefWidth="246.0">
+<columns>
+<TableColumn fx:id="tbl2_bAd" prefWidth="43.33331298828125" text="bAD"/>
+<TableColumn fx:id="tbl2_bTip" prefWidth="83.333251953125" text="Tipi"/>
+<TableColumn fx:id="tbl2_birimKalori" prefWidth="77.3333740234375" text="Birim Kalori"/>
+<TableColumn fx:id="tbl2_stok" prefWidth="39.33333333333334" text="Stok"/>
+</columns>
+</TableView>
+<ComboBox fx:id="combo_gidalar" layoutX="14.0" layoutY="180.0" prefHeight="39.0" prefWidth="131.0" promptText="Gıda Tipi Seçiniz.."/>
+<Spinner fx:id="cnt_gidaAdet" layoutX="169.0" layoutY="182.0" prefHeight="25.0" prefWidth="69.0"/>
+<Label layoutX="173.0" layoutY="165.0" text="Gıda Adet">
+<font>
+<Font name="System Bold" size="13.0"/>
+</font>
+</Label>
+<Button fx:id="btn_yemekListe" layoutX="156.0" layoutY="213.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="106.0" text="Yemek Listesi Oluştur" textAlignment="CENTER"/>
+<ComboBox fx:id="combo_danisanlar" layoutX="14.0" layoutY="223.0" prefHeight="39.0" prefWidth="131.0" promptText="Danışan Seçiniz.."/>
+</children>
+</AnchorPane>
+</items>
+</SplitPane>
+</children>
+</AnchorPane>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="157.0" prefWidth="597.0" style="-fx-background-color: white;">
+<children>
+<TextField fx:id="txt_adet" layoutX="14.0" layoutY="34.0" prefHeight="25.0" prefWidth="90.0" promptText="Adet"/>
+<CheckBox fx:id="check_kontrol" layoutX="129.0" layoutY="10.0" mnemonicParsing="false" text="Kontrol Edildi"/>
+<Button fx:id="btn_sil" layoutX="14.0" layoutY="66.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="Sil"/>
+<Label layoutX="14.0" layoutY="9.0" prefHeight="19.0" prefWidth="105.0" text="Seçili Liste için">
+<font>
+<Font name="System Bold" size="13.0"/>
+</font>
+</Label>
+<TextField fx:id="txt_kaloriOran" layoutX="122.0" layoutY="34.0" prefHeight="25.0" prefWidth="90.0" promptText="Kalori Oranı"/>
+<Label layoutX="304.0" layoutY="42.0" text="En Çok tüketilen 5 besin: ">
+<font>
+<Font name="System Bold" size="12.0"/>
+</font>
+</Label>
+<Label fx:id="lbl_tarih" layoutX="304.0" layoutY="80.0" text="En Çok Kalori tüketilen tarih:">
+<font>
+<Font name="System Bold" size="12.0"/>
+</font>
+</Label>
+<Button fx:id="btn_guncelle" layoutX="122.0" layoutY="66.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="90.0" text="Güncelle"/>
+<Label layoutX="338.0" layoutY="4.0" text="Otomasyon İstatistikleri">
+<font>
+<Font size="20.0"/>
+</font>
+</Label>
+<ComboBox layoutX="480.0" layoutY="38.0" prefHeight="26.0" prefWidth="106.0" promptText="Besinler..."/>
+<Label fx:id="lbl_ortalamaKalori" layoutX="302.0" layoutY="112.0" text="Tüketilen Ortalama Kalori:">
+<font>
+<Font name="System Bold" size="12.0"/>
+</font>
+</Label>
+</children>
+</AnchorPane>
+</items>
+</SplitPane>
+</children>
+</AnchorPane>
